@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 50px;
+}
+
+.animation{
+    text-align: center;
+    padding: 70px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    margin: 2px 2px 2px 2px;
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+}
+
+h1:hover {
+    background-color: rgb(0, 0, 0);
+    width: 25% ;
+    margin: auto;
+    border-radius: 10px/20px;
+}
+
+h2 {
+    width: 10px;
+    height: 10px;
+}
+
+.loader{
+    border:  9px solid #f3f3f3;
+    border-radius: 50px;
+    border-top: 9px solid grey;
+    border-right: 9px solid grey;
+    border-bottom: 9px solid rgb(0, 0, 0) ;
+    border-left: 9px solid grey;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 2s linear infinite ;
+    animation: spin 2s linear infinite;
+    margin: auto;
+}
+
+@-webkit-keyframes spin {
+    0% {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
